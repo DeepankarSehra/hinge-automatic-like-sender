@@ -1,1 +1,0 @@
-tt = 'teri mummy lode'
