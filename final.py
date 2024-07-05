@@ -14,5 +14,8 @@ def run_scripts():
             break
 
 if __name__ == "__main__":
-    while(True):
-        run_scripts()
+    try:
+        while(True):
+            run_scripts()
+    except KeyboardInterrupt:
+        print('Stopping the script...')
