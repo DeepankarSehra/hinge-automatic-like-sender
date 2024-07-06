@@ -1,6 +1,6 @@
 # Hinge Automatic Like Sender
 
-This project automates the process of sending likes on dating app Hinge. It scrolls through profiles, detects facial landmarks, classifies profiles using a trained model, generates responses to prompts, and sends likes automatically.
+This project automates the process of sending likes on the dating app Hinge. It scrolls through profiles, detects facial landmarks, classifies profiles using a trained model, generates responses to prompts, and sends likes automatically.
 
 ## Features
 
