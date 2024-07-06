@@ -45,7 +45,7 @@ This project automates the process of sending likes on Hinge. It scrolls through
 ## Usage
 
 1. **Configure the Gemini API:**
-    - Sign up for a Gemini API key and set it in [prompt_gemini_rizzy.py](prompt_gemini_rizzy.py).
+    - Sign up for a Gemini API key and set it in [prompt_gemini.py](prompt_gemini.py).
 
 2. **Using a classifier:**
     - If you want to send likes based on your preferences then ensure you have a trained classifier job saved locally. If not, train it using your dataset and save the model. Use it in [profile_elements.py](profile_elements.py).
