@@ -1,4 +1,5 @@
 import subprocess
+import time
 
 # Runs all the scripts in given order
 def run_scripts():
@@ -16,6 +17,8 @@ def run_scripts():
 if __name__ == "__main__":
     try:
         while(True):
+            time.sleep(2)
             run_scripts()
+            print("Completed one profile, on to next. Press Ctrl+C to stop")
     except KeyboardInterrupt:
         print('Stopping the script...')
