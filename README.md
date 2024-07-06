@@ -1,6 +1,6 @@
 # Hinge Automatic Like Sender
 
-This project automates the process of sending likes on Hinge. It scrolls through profiles, detects facial landmarks, classifies profiles using a trained model, generates responses to prompts, and sends likes automatically.
+This project automates the process of sending likes on dating app Hinge. It scrolls through profiles, detects facial landmarks, classifies profiles using a trained model, generates responses to prompts, and sends likes automatically.
 
 ## Features
 
@@ -14,6 +14,7 @@ This project automates the process of sending likes on Hinge. It scrolls through
 ## Requirements
 
 - Python 3.x
+- ADB
 - MediaPipe
 - Gemini API
 - OpenCV
@@ -28,7 +29,6 @@ This project automates the process of sending likes on Hinge. It scrolls through
 1. Clone the repository:
     ```sh
     git clone https://github.com/DeepankarSehra/hinge-automatic-like-sender.git
-    cd hinge-automatic-like-sender
     ```
 
 2. Create and activate a virtual environment (optional but recommended):
@@ -39,7 +39,7 @@ This project automates the process of sending likes on Hinge. It scrolls through
 
 3. Install the required dependencies:
     ```sh
-    pip install -r requirements.txt
+    pip install -r hinge-automatic-like-sender/requirements.txt
     ```
 
 ## Usage
@@ -53,7 +53,7 @@ This project automates the process of sending likes on Hinge. It scrolls through
 
 3. **Run the Script:**
     ```sh
-    python final.py
+    python /hinge-automatic-like-sender/final.py
     ```
 
 4. **Automated Liking:**
