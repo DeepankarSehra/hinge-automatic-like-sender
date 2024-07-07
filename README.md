@@ -51,12 +51,15 @@ This project automates the process of sending likes on the dating app Hinge. It 
     - If you want to send likes based on your preferences then ensure you have a trained classifier job saved locally. If not, train it using your dataset and save the model. Use it in [profile_elements.py](profile_elements.py).
     - If not, then edit the ```main``` function in [after_extract.py](after_extract.py) to remove the if-else statement.
 
-3. **Run the Script:**
+3. **Before running the Script:**
+   Enable USB debugging on your phone and open the Hinge app while keeping your phone connected to your laptop.
+   
+5. **Run the Script:**
     ```sh
     python /hinge-automatic-like-sender/final.py
     ```
 
-4. **Automated Liking:**
+6. **Automated Liking:**
     - The script will start scrolling through profiles, capturing screenshots, detecting facial landmarks, classifying profiles, generating responses, and sending likes automatically.
     - It also deletes the captured screenshots that are saved from your device simultaneously. All the saved data is cleaned up after [cleanup.py](cleanup.py) has run.
 
