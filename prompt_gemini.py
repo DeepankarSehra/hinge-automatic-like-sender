@@ -36,7 +36,7 @@ for i in range(len(os.listdir(folder_path))):
         tt = response.text
         responses.append(tt)
     except:
-        responses.append(None)                                                                  # in case gemini flags as sexually explicit
+        responses.append('')                                                                  # in case gemini flags as sexually explicit
         
 
 print(responses)
