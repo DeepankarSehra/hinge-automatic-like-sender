@@ -37,7 +37,19 @@ This project automates the process of sending likes on the dating app Hinge. It 
     source venv/bin/activate   # On Windows, use `venv\Scripts\activate`
     ```
 
-3. Install the required dependencies:
+3. Install ADB:
+    - **For Windows:**
+      Download the [ADB binary](https://developer.android.com/studio/releases/platform-tools) and follow the installation instructions.
+    - **For macOS:**
+      ```sh
+      brew install android-platform-tools
+      ```
+    - **For Linux:**
+      ```sh
+      sudo apt-get install android-tools-adb
+      ```
+      
+4. Install the required dependencies:
     ```sh
     pip install -r hinge-automatic-like-sender/requirements.txt
     ```
@@ -51,15 +63,21 @@ This project automates the process of sending likes on the dating app Hinge. It 
     - If you want to send likes based on your preferences then ensure you have a trained classifier job saved locally. If not, train it using your dataset and save the model. Use it in [profile_elements.py](profile_elements.py).
     - If not, then edit the ```main``` function in [after_extract.py](after_extract.py) to remove the if-else statement.
 
-3. **Before running the Script:**
-   Enable USB debugging on your phone and open the Hinge app while keeping your phone connected to your laptop.
+3. **Connect your device via ADB:**
+    - Enable Developer Options and USB Debugging on your Android device.
+    - Connect your device to your laptop via USB.
+    - Verify the connection:
+      ```sh
+      adb devices
+      ```
+      You should see your device listed.
    
-5. **Run the Script:**
+4. **Run the Script:**
     ```sh
     python /hinge-automatic-like-sender/final.py
     ```
 
-6. **Automated Liking:**
+5. **Automated Liking:**
     - The script will start scrolling through profiles, capturing screenshots, detecting facial landmarks, classifying profiles, generating responses, and sending likes automatically.
     - It also deletes the captured screenshots that are saved from your device simultaneously. All the saved data is cleaned up after [cleanup.py](cleanup.py) has run.
 
