@@ -1,6 +1,6 @@
 from screenshot_separate import run_adb_command
 from prompt_finder import picked_boxes
-from scripts.prompt_gemini_rizzy import responses
+from prompt_gemini_rizzy import responses
 import time
 from profile_elements import count
 
