@@ -4,7 +4,7 @@ from matplotlib import pyplot as plt
 import os
 
 large_image_path = 'screenshots/masti.png'
-template_image_path = 'scripts/like_box.png'
+template_image_path = 'like_box.png'
 
 large_image = cv2.imread(large_image_path)
 template = cv2.imread(template_image_path)
