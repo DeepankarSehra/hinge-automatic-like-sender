@@ -91,7 +91,7 @@ remove_non_images()
 mp_face_mesh = mp.solutions.face_mesh
 face_mesh = mp_face_mesh.FaceMesh(static_image_mode=True)
 
-clf = joblib.load('scripts/random_forest_classifier.pkl')
+clf = joblib.load('random_forest_classifier.pkl')
 img_folder = 'profile_elements/'
 
 count = 0
