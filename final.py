@@ -3,7 +3,7 @@ import time
 
 # Runs all the scripts in given order
 def run_scripts():
-    scripts = ['scripts/screenshot_separate.py', 'scripts/screenshot_joining.py', 'scripts/after_extract.py', 'scripts/cleanup.py']
+    scripts = ['screenshot_separate.py', 'screenshot_joining.py', 'after_extract.py', 'cleanup.py']
 
     for script in scripts:
         print(f"Running {script}")
